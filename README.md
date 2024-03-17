@@ -1,17 +1,10 @@
-# nwserver-nwnx-template
+# nwn-placeable-cast-spell
 
 Template for nwnee projects with nwnx installed, running Docker.
 
-Useful to get quickly up and running for proof of concepts, testing features, or reproducing bugs.
+This project is a quick repro of the catapult feature in https://github.com/Daztek/EquinoxFramework/, and most of the code was copied from [es_s_kobinv.nss](https://github.com/Daztek/EventSystem/blob/master/Components/Subsystems/es_s_kobinv.nss). All credit to Daz for the implementation.
 
-## Getting started
-
-### Init
-
-1. Run `./init.sh` to get started with an nwnx version
-1. Run `nasher init` to get started with the project sources
-
-### Use
+## Use
 
 Use [nasher](https://github.com/squattingmonk/nasher) to manage the sources.
 
