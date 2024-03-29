@@ -1,4 +1,5 @@
 #include "nwnx_events"
+#include "nwnx_object"
 
 void KI_FireCatapult(object oCatapult, location locTarget)
 {
@@ -58,6 +59,8 @@ void main() {
   if(oCatapult == OBJECT_INVALID)
     oCatapult = CreateObject(OBJECT_TYPE_PLACEABLE, sLauncherResref, GetLocation(oPC));
   
+  NWNX_Object_SetAILevel(oCatapult, 4);
+
   DelayCommand((Random(10) + 1) / 10.0f, KI_FireCatapult(oCatapult, locTarget));
 
   NWNX_Events_SkipEvent(); // stop walking
